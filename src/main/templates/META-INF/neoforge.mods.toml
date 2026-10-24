@@ -29,5 +29,12 @@ config = "${mod_id}.mixins.json"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.${mod_id}]]
+    modId="citadel"
+    type="required"
+    versionRange="${citadel_version_range}"
+    ordering="AFTER"
+    side="BOTH"
+
 [modproperties.${mod_id}]
     catalogueItemIcon="alexscaves:stone"
